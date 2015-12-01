@@ -13,8 +13,8 @@ app.debug = True
 def start():
 	global p
 	try:
-		p = subprocess.Popen(["stress","--cpu","8"])
-		# p = subprocess.Popen(["sleep","200s"])
+		# p = subprocess.Popen(["stress","--cpu","8"])
+		p = subprocess.Popen(["sleep","200s"])
 		logging.info('Child process started succesfully')
 	except:
 		logging.error('Could not start process')
